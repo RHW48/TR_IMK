@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+
+
 <html>
     <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>HomePage</title>
     </head>
 
-    
 
+    
     <body>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -20,137 +23,155 @@
             <a class="navbar-brand" href="index.html">
               <img src="Images/logo.jpg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
             </a>
-            <a class="navbar-brand" href="index.html">Fasion Katalog (FB)</a>
+            <a class="navbar-brand" href="index.html">Fashion Katalog (FB)</a>
           </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+      <div class="container-fluid text-center">
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Apa yang kamu cari..." aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-info">Search</button>
+        </div>
+      </div>
+      
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
+          
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
+                Services
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Shopping</a></li>
-              <li><a class="dropdown-item" href="#">Posting</a></li>
-          </ul>
-          </li>
+                <li><a class="dropdown-item" href="#">Shopping</a></li>
+                <li><a class="dropdown-item" href="#">Posting</a></li>
+            </ul>
+        </li>
+        
           <li class="nav-item">
-            <a class="nav-link active" href="login.html">Login</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
         </ul>
+        
       </div>
+      
     </div>
   </nav>
   <!-- End Navbar -->
 
- <!-- Section: Design Block -->
-<section class="background-radial-gradient overflow-hidden">
-  <style>
-    .background-radial-gradient {
-      background-color: hsl(218, 41%, 15%);
-      background-image: radial-gradient(650px circle at 0% 0%,
-          hsl(218, 41%, 35%) 15%,
-          hsl(218, 41%, 30%) 35%,
-          hsl(218, 41%, 20%) 75%,
-          hsl(218, 41%, 19%) 80%,
-          transparent 100%),
-        radial-gradient(1250px circle at 100% 100%,
-          hsl(218, 41%, 45%) 15%,
-          hsl(218, 41%, 30%) 35%,
-          hsl(218, 41%, 20%) 75%,
-          hsl(218, 41%, 19%) 80%,
-          transparent 100%);
-    }
+  <!--Jumbotron-->
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+       
+      <h1 class="display-5 fw-bold">Fashion Katalog (FK)</h1>
+      <p class="col-md-8 fs-4">Temukan sentuhan eksklusif dalam setiap jahitan dan paduan warna yang memikat!
+      </p>
+      <p class="col-md-8 fs-4">Jelajahi katalog kami, dan buat setiap momen Anda menjadi catwalk pribadi.
+      </p>
+ 
+     
+    </div>
+  </div>
+  <!--End Jumbotron-->
 
-    #radius-shape-1 {
-      height: 220px;
-      width: 220px;
-      top: -60px;
-      left: -130px;
-      background: radial-gradient(#44006b, #ad1fff);
-      overflow: hidden;
-    }
+  <div class="container pt-5">
 
-    #radius-shape-2 {
-      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-      bottom: -60px;
-      right: -110px;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(#44006b, #ad1fff);
-      overflow: hidden;
-    }
 
-    .bg-glass {
-      background-color: hsla(0, 0%, 100%, 0.9) !important;
-      backdrop-filter: saturate(200%) blur(25px);
-    }
-  </style>
 
-  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-    <div class="row gx-lg-5 align-items-center mb-5">
-      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-         Fasion Katalog <br />
-          <span style="color: hsl(218, 81%, 75%)">Katalog Untuk <br> Fasion Terkini</span>
-        </h1>
-        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-          Website Fasion Katalog adalah website yang dibuat untuk 
-          memenuhi tugas Asisten Dosen Interaksi Manusia Komputer D
-        </p>
+    
+<!-- Carousel -->
+<div class="container-fluid"> 
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/1.webp" alt="carousel 1" class="d-block w-100">
       </div>
+      <div class="carousel-item">
+        <img src="Images/cl2.webp" alt="carousel 2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/1.webp" alt="carousel 3" class="d-block w-100"> <!-- Tes dlu, nanti gnti gambar -->
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+</div>
 
-      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
-        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-
-        <div class="card bg-glass">
-          <div class="card-body px-4 py-5 px-md-5">
-            <form>
-
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
-                <label class="form-label" for="form3Example3">Email address</label>
-              </div>
-
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
-                <label class="form-label" for="form3Example4">Password</label>
-              </div>
-
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-dark btn-block mb-4">
-                Sign up
-              </button>
-
-              <!-- Register buttons -->
-              <div class="text-right">
-                <p>Did not have account? <a href="register.html">Register</a></p>
-
-              </div>
-            </form>
+<br>
+  <!--card-->
+<section id="card">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img src="Images/kids1.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kids Fashion</h5>
+              <p class="card-text">New and stylist fashion for kids</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last update was 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100 text-center">
+            <img src="Images/man1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Man Fashion</h5>
+              <p class="card-text">New and stylist fashion for Man</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last update was 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100 text-end">
+            <img src="Images/wm2.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Women Fashion</h5>
+              <p class="card-text">New and stylist fashion for Women</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last update was 3 mins ago</small>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Section: Design Block -->
+  </section>
+  <!--End card-->
 
   <!--footer-->
-<footer class="bg-dark text-white mb-3">
-    <div class="container">
+  <footer  style="background-color:#212121 ;color: white;">
+    <div class="container " >
       <div class="row p-3">
         <div class="col-sm-8 col-xxl-9">
           <div class="mb-3">
@@ -159,7 +180,7 @@
               <path
                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
             </svg>
-            <a class="m-3 text-white" href="https://www.instagram.com/fasionkatalog">@FasionKatalog(FK)</a>
+            <a class="m-3 text-white" href="https://www.instagram.com/fashionkatalog">@FashionKatalog(FK)</a>
           </div>
    
           <div>
@@ -180,7 +201,7 @@
     </div>
    
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright: Fasion Katalog
+        © 2023 Copyright: Fashion Katalog
       </div>
    
   </footer>
