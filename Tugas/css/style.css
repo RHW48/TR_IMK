@@ -1,0 +1,41 @@
+/* CSS untuk tombol dengan kelas btn-produk */
+.btn-produk {
+    padding: 10px 20px; /* padding pada tombol */
+    font-size: 16px; /* ukuran teks */
+    border: 2px solid #333; /* border */
+    background-color: #f7f7f7; /* warna latar belakang */
+    color: #333; /* warna teks */
+    border-radius: 5px; /* border radius sudut */
+    transition: all 0.3s ease; /* animasi perubahan */
+  }
+  
+  /* Hover effect */
+  .btn-produk:hover {
+    background-color: #333; /* warna latar belakang saat dihover */
+    color: #fff; /* warna teks saat dihover */
+  }
+  
+  /* Gaya untuk bintang */
+  .rating {
+    unicode-bidi: bidi-override;
+    text-align: left;
+    color: #ffd700; /* Warna emas */
+    font-size: 20px; /* Ukuran font */
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.rating > span:before {
+    content: "\2606";
+    position: absolute;
+}
