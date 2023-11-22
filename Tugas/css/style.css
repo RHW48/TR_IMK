@@ -1,5 +1,5 @@
-/* Gaya untuk tombol dengan kelas btn-produk */
-.btn-produk {
+/* Tombol Chat */
+.btn-chat {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #333;
@@ -7,13 +7,45 @@
     color: #333;
     border-radius: 5px;
     transition: all 0.3s ease;
+    width: 100px;
+    font-weight: bold;
 }
 
-/* Hover effect */
-.btn-produk:hover {
+.btn-chat:hover {
     background-color: #333;
     color: #fff;
 }
+
+/* Tombol Keranjang */
+.btn-keranjang {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 300px;
+    font-weight: bold;
+}
+
+.btn-keranjang:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Tombol Beli */
+.btn-beli {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333; 
+    color: #f7f7f7;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 300px;
+    font-weight: bold;
+}
+
 
 /* Gaya untuk bintang */
 .rating {
@@ -47,4 +79,14 @@
 .card-img-top {
     object-fit: cover;
     height: 200px;
+}
+
+li{
+   margin-left: 0px;
+   text-align: left;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: justify;
 }
