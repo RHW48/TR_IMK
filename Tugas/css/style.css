@@ -47,9 +47,10 @@
 }
 
 
-/* Gaya untuk bintang */
+/* bintang */
 .rating {
     unicode-bidi: bidi-override;
+    direction: rtl; 
     text-align: left;
     color: #ffd700;
     font-size: 20px;
@@ -89,4 +90,9 @@ li{
 p{
     margin-bottom: 10px;
     text-align: justify;
+}
+
+.foto-seller{
+        width: 75px; 
+        height: auto; 
 }
