@@ -80,8 +80,26 @@
           </li>     
         </ul>
         <a href="#">
-        <button type="button" class="btn btn-outline-secondary rounded-pill"><i class="fa-solid fa-user" style="color: #ffffff;"></i></button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill" onclick="openNav()">
+            <i class="fa-solid fa-user" style="color:#ffffff;"></i></button>
         </a>
+        <div id="mySidenav" class="sidenav">
+          <span class="greeting" style=>Hello, User</span>
+          <a href="javascript:void(0)" class="closebtn greeting"style="color: #ffffff;" onclick="closeNav()"><i class="fa-sharp fa-solid fa-xmark"></i></a> 
+          <div class="greet-bg">
+
+          </div>
+
+          <a href="index.html#tentang_kami">Tentang</a>
+          <a href="#">Layanan</a>
+          <a href="#">FAQ</a>
+          <a href="#">Customer Service</a>
+          <div class="logout-link">
+            <a style="color: #818181;" href="index.html">
+              <i class="fas fa-right-from-bracket"></i> Logout
+            </a>
+          </div>
+        </div> 
         
          
       </div>
@@ -96,19 +114,20 @@
   <ul class="nav navbar-expand-lg ms-auto navbar-dark justify-content-center"  style="background-color:#383737">
  
     <li class="nav-item">
-      <a class="nav-link active text-light" aria-current="page" href="Manfasion.html">Man</a>
+      <a class="nav-link active text-light link-secondary" aria-current="page"
+       href="Manfasion.html">Man</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Womenfasion.html">Women</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Womenfasion.html">Women</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Kidsfasion.html">Kids</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Kidsfasion.html">Kids</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Newfasion.html">New Release</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Newfasion.html">New Release</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="BestSalefasion.html">Best Sale</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="BestSalefasion.html">Best Sale</a>
     </li>
   </ul>
   <!-- End Submenu-->

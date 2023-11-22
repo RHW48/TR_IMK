@@ -98,3 +98,84 @@ p{
         width: 75px; 
         height: auto; 
 }
+
+.fa-cart-shopping:hover {
+    color: rgb(114, 114, 114) !important;
+  }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; 
+    background-color: #212529;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display:block; 
+    transition:.3s; 
+    font-size: 25px;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1 !important; ;  
+}
+
+.greeting {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 10px; 
+    top: 10px;
+    padding: 8px 25px 8px 8px;
+    
+
+}
+
+.greet-bg {
+    height: 2px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.closebtn {
+    right: 20px; 
+    top: 17px;
+    font-size: 30px;
+    margin-left: 170px;
+
+}
+.closebtn i:hover {
+    color: red!important;
+}
+
+.logout-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; 
+}
+
+.logout-link a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.logout-link a:hover {
+    color: #f1f1f1;
+}

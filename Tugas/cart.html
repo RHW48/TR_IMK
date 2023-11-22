@@ -9,6 +9,7 @@
     <title>Our Style</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       .fa-cart-shopping:hover {
         color: rgb(114, 114, 114) !important;
@@ -80,9 +81,28 @@
               
           </li>     
         </ul>
+
         <a href="#">
-        <button type="button" class="btn btn-outline-secondary rounded-pill"><i class="fa-solid fa-user" style="color: #ffffff;"></i></button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill" onclick="openNav()">
+            <i class="fa-solid fa-user" style="color:#ffffff;"></i></button>
         </a>
+        <div id="mySidenav" class="sidenav">
+          <span class="greeting" style=>Hello, User</span>
+          <a href="javascript:void(0)" class="closebtn greeting"style="color: #ffffff;" onclick="closeNav()"><i class="fa-sharp fa-solid fa-xmark"></i></a> 
+          <div class="greet-bg">
+
+          </div>
+
+          <a href="index.html#tentang_kami">Tentang</a>
+          <a href="#">Layanan</a>
+          <a href="#">FAQ</a>
+          <a href="#">Customer Service</a>
+          <div class="logout-link">
+            <a style="color: #818181;" href="index.html">
+              <i class="fas fa-right-from-bracket"></i> Logout
+            </a>
+          </div>
+
         
          
       </div>
@@ -97,19 +117,19 @@
   <ul class="nav navbar-expand-lg ms-auto navbar-dark justify-content-center"  style="background-color:#212121">
  
     <li class="nav-item">
-      <a class="nav-link active text-light" aria-current="page" href="Manfasion.html">Man</a>
+      <a class="nav-link active text-light link-secondary" aria-current="page" href="Manfasion.html">Man</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Womenfasion.html">Women</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Womenfasion.html">Women</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Kidsfasion.html">Kids</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Kidsfasion.html">Kids</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="Newfasion.html">New Release</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="Newfasion.html">New Release</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="BestSalefasion.html">Best Sale</a>
+      <a class="nav-link text-light link-secondary" aria-current="page" href="BestSalefasion.html">Best Sale</a>
     </li>
   </ul>
   <!-- End Submenu-->
@@ -323,7 +343,8 @@
    
   </footer>
   <!--end footer-->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/cart.js"> </script>
 
     </body>
 
