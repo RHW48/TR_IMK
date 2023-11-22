@@ -73,8 +73,9 @@
     position: absolute;
 }
 
-.btn-buy {
-    width: 200px;
+.btn-card-beli {
+    width: 100px;
+
 }
 
 .card-img-top {
@@ -93,6 +94,7 @@ p{
 }
 
 .foto-seller{
+    margin-left: 10px;
         width: 75px; 
         height: auto; 
 }
