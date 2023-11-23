@@ -1,3 +1,9 @@
+/* Menggunakan font umum */
+/* Menggunakan font Poppins pada elemen teks utama */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
 /* Tombol Chat */
 .btn-chat {
     padding: 10px 20px;
