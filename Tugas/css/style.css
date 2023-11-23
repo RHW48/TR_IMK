@@ -49,28 +49,17 @@
 
 /* bintang */
 .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl; 
-    text-align: left;
     color: #ffd700;
-    font-size: 20px;
+    margin-right: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
-
-.rating > span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-}
-
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute;
-}
-
-.rating > span:before {
-    content: "\2606";
-    position: absolute;
+.rating-score {
+    color: #212529;
+    font-weight: lighter;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .btn-card-beli {
@@ -179,3 +168,9 @@ p{
 .logout-link a:hover {
     color: #f1f1f1;
 }
+
+.carousel-inner .carousel-item img {
+    height: 500px; /* Ganti dengan tinggi yang Anda inginkan */
+    object-fit: cover;
+    width: 100%;
+  }
