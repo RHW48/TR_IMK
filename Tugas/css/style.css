@@ -204,3 +204,52 @@ p {
   text-align: center;
   width: 45px;
 }
+
+/* Review */
+.review {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative; /* Untuk mengatur posisi absolut tombol */
+  max-height: 150px; /* Tinggi default card */
+  overflow: hidden; /* Konten yang berlebihan akan disembunyikan */
+}
+
+.review h5 {
+  margin-bottom: 10px;
+}
+
+.review p {
+  margin-bottom: 10px;
+}
+
+.btn-expand {
+  position: absolute;
+  top: 10px; /* Posisi di bagian atas */
+  right: 10px;
+  background: none;
+  border: none;
+  color: #333; /* Warna teks */
+  cursor: pointer;
+}
+
+.review.expanded {
+  max-height: none; /* Menampilkan semua konten saat card diperluas */
+}
+
+/* Untuk scrollbar pada browser WebKit */
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
