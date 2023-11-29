@@ -107,10 +107,10 @@
       <a class="nav-link text-light" aria-current="page" href="Kidsfasion.html">Kids</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="#.html">New Release</a>
+      <a class="nav-link text-light" aria-current="page" href="Newfasion.html">New Release</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-light" aria-current="page" href="#.html">Best Sale</a>
+      <a class="nav-link text-light" aria-current="page" href="BestSalefasion.html">Best Sale</a>
     </li>
   </ul>
   <!-- End Submenu-->
@@ -152,6 +152,14 @@
                     <h5 class="card-title mt-5">Deskripsi Barang</h5>
                     <p class="card-text">Ini adalah deskripsi barang. Anda dapat menambahkan informasi tentang barang di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, necessitatibus? Dicta unde sequi, minus ipsa dignissimos nulla deleniti, ex distinctio magnam quidem nesciunt laboriosam, accusamus nostrum. Maiores, minima magnam. Pariatur?</p>
                     <h2 class="mt-5">Rp. ******</h2><br>
+                    <div class="row mt-4">
+                      <div class="input-group mb-3">
+                        <label for="quantity" class="input-group-text">Jumlah : </label>
+                        <button class="btn btn-outline-secondary" type="button" id="btnMinus">-</button>
+                        <input class="quantity" id="quantity" name="quantity" min="1" value="1">
+                        <button class="btn btn-outline-secondary" type="button" id="btnPlus">+</button>
+                      </div>
+                    </div>
                     <div class="row mt-4">
                       <div class="col-md-auto">
                         <button class="btn btn-secondary">
@@ -433,6 +441,25 @@
   </footer>
   <!--end footer-->
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const quantityInput = document.getElementById('quantity');
+      const btnMinus = document.getElementById('btnMinus');
+      const btnPlus = document.getElementById('btnPlus');
+
+      btnMinus.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+        }
+      });
+
+      btnPlus.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+      });
+    });
+  </script>
 
     </body>
 
