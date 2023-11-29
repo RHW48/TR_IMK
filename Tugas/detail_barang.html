@@ -144,31 +144,50 @@
         
         <div class="col-lg-8 col-md-12">
             <div class="card" style="height: 500px; overflow-y: auto;">
-                <div class="card-body m-3">
+                <div class="card-body m-2">
                     <h1>Nama Produk</h1>
                     <div class="card-title"> 
                       <small class="fa fa-star-half-alt"> 4,9 </small>
-                      <small> Terjual 100 </small>
+                      <small class="text-secondary"> Terjual 100 </small>
                     </div>
-                    <h5 class="card-title mt-5">Deskripsi Barang</h5>
-                    <p class="card-text">Ini adalah deskripsi barang. Anda dapat menambahkan informasi tentang barang di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, necessitatibus? Dicta unde sequi, minus ipsa dignissimos nulla deleniti, ex distinctio magnam quidem nesciunt laboriosam, accusamus nostrum. Maiores, minima magnam. Pariatur?</p>
-                    <h2 class="mt-5">Rp. ******</h2><br>
-                    <div class="row mt-4">
-                      <div class="input-group mb-3">
-                        <label for="sizeSelect" class="input-group-text">Pilih Ukuran :</label>
-                        <select id="sizeSelect" name="size" class=" me-2" style="width: 100px;">
-                          <option value="S">S</option>
-                          <option value="M">M</option>
-                          <option value="L">L</option>
-                          <option value="XL">XL</option>
-                        </select>
-                        <label for="quantity" class="input-group-text">Jumlah : </label>
-                        <button class="btn btn-outline-secondary" type="button" id="btnMinus">-</button>
-                        <input id="quantity" name="quantity" min="1" value="1" style="width: 50px; text-align: center;">
-                        <button class="btn btn-outline-secondary" type="button" id="btnPlus">+</button>
+                    <h5 class="card-title mt-2">Deskripsi Barang</h5>
+                    <p class="card-text mt-2 text-secondary">Ini adalah deskripsi barang. Anda dapat menambahkan informasi tentang barang di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, necessitatibus? Dicta unde sequi, minus ipsa dignissimos nulla deleniti, ex distinctio magnam quidem nesciunt laboriosam, accusamus nostrum. Maiores, minima magnam. Pariatur?</p>
+                    <h2 class="mt-4">Rp. ******</h2>
+                    <div class="row mt-4 align-items-center">
+                      <div class="col-md-2 text-dark">
+                        <h6 class="text-secondary">Ukuran</h6>
                       </div>
-                      
+                      <div class="col-md-4">
+                         
+                              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeActive(this)">S</button>
+                              <span style="margin-right: 5px;"></span>
+                              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeActive(this)">M</button>
+                              <span style="margin-right: 5px;"></span>
+                              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeActive(this)">L</button>
+                              <span style="margin-right: 5px;"></span>
+                              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeActive(this)">XL</button>
+                              <span style="margin-right: 5px;"></span>
+                              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeActive(this)">XXL</button>
+                              <span style="margin-right: 5px;"></span>
+                         
+                      </div>
                     </div>
+      
+                  <div class="row mt-2 align-items-center">
+                    <div class="col-md-2">
+                        <h6 class="text-secondary">Jumlah</h6>
+                    </div>
+                      <div class="col-md-2">
+                          <div class="input-group mb-2">
+                              <button class="btn btn-outline-secondary btn-sm" type="button" id="btnMinus">-</button>
+                              <input id="quantity" name="quantity" min="1" value="1" style="width: 35px; text-align: center;">
+                              <button class="btn btn-outline-secondary btn-sm" type="button" id="btnPlus">+</button>
+                          </div>
+                      </div> 
+                      <div class="col-md-4">
+                          <div class="text-secondary">Tersisa 90 Buah</div>
+                      </div>
+                  </div>
                     <div class="row mt-4">
                       <div class="col-md-auto">
                         <button class="btn btn-secondary">
@@ -185,7 +204,7 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
 
 
   <!-- Detail barang -->
@@ -198,7 +217,7 @@
                         <img src="Images/icon.png" alt="" class="foto-seller">
                         <div style="margin-left: 20px;">
                             <h5><b>Nama Toko</b></h5>
-                            <p>Lokasi toko</p>
+                            <p class="text-secondary">Lokasi toko</p>
                         </div>
                     </div>
                     <button class="btn btn-success">
@@ -210,11 +229,11 @@
             <div class="card mt-3" style="max-height: 275px; overflow-y: auto;">
                 <div class="card-body m-3">
                     <h2 class="card-title">Detail Produk</h2><br>
-                    <p>Harga : Rp.</p>
-                    <p>Stok tersedia :</p>
-                    <p>Ukuran tersedia : </p>
-                    <p>Berat : </p>
-                    <p>Ongkos Pengiriman : </p>
+                    <p class="text-secondary">Harga : Rp.</p>
+                    <p class="text-secondary">Stok tersedia :</p>
+                    <p class="text-secondary">Ukuran tersedia : </p>
+                    <p class="text-secondary">Berat : </p>
+                    <p class="text-secondary">Ongkos Pengiriman : </p>
                 </div>
             </div>
         </div>
@@ -224,13 +243,13 @@
                     <h2 class="card-title">Informasi Produk</h2><br>
                     <div>
                       <h5><b>Spesifikasi</b></h5>
-                      <p>Merek : </p>
-                      <p>Bahan :</p>
-                      <p>Warna</p>
+                      <p class="text-secondary">Merek : </p>
+                      <p class="text-secondary">Bahan :</p>
+                      <p class="text-secondary">Warna</p>
                     </div>
                     <div class="mt-4">
                         <h5><b>Deskripsi Barang</b></h5>
-                        <p>
+                        <p class="text-secondary">
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsa tempore voluptas natus, necessitatibus minus et repellat aperiam neque laudantium autem nobis quasi molestiae eius aut aliquam ratione mollitia. Consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sed eius quidem, magni culpa corporis saepe omnis aliquam eveniet perspiciatis, repellendus voluptate mollitia alias assumenda qui dolore quis placeat eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit atque pariatur ullam, deserunt vero est! Nemo tempore dolores laboriosam, doloribus, ex necessitatibus vel ducimus ea repellat nam nobis dolorum! Natus! Loremlorem
                         </p>
                     </div>
@@ -498,6 +517,20 @@
         btn.textContent = 'Tampilkan Lebih Banyak';
       }
     }
+
+    function changeActive(btn) {
+    // Ambil semua tombol di dalam grup
+    var btns = btn.parentElement.getElementsByTagName('button');
+
+    // Hapus kelas 'active' dari semua tombol
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove('active');
+    }
+
+    // Tambahkan kelas 'active' pada tombol yang diklik
+    btn.classList.add('active');
+}
+
   </script>
 
     </body>
